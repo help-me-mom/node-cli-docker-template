@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "module": "ES2022",
+    "target": "ES2022",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "importHelpers": false,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
+  },
+  "files": ["index.ts"]
+}
