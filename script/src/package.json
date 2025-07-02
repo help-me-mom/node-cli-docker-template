@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@types/node": "22.15.35",
+    "@types/node": "22.16.0",
     "mysql2": "3.14.1",
     "nodemon": "3.1.10",
     "tsx": "4.20.3",
