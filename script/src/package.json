@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "@types/node": "24.13.3",
-    "mysql2": "3.23.0",
+    "mysql2": "3.23.1",
     "nodemon": "3.1.14",
     "tsx": "4.23.1",
     "typescript": "7.0.2"
