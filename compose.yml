@@ -1,6 +1,6 @@
 services:
   database:
-    image: mysql:9.7.1
+    image: mysql:9.7.2
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
       - MYSQL_DATABASE=script
