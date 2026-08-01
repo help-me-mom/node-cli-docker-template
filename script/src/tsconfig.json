@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
     "lib": ["ES2022"],
-    "module": "ES2022",
+    "module": "Preserve",
     "target": "ES2022",
-    "sourceMap": true,
-    "moduleResolution": "Node",
-    "importHelpers": false,
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "types": ["node"],
-    "strict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true
+    "strict": true
   },
   "files": ["index.ts"]
 }

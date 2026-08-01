@@ -2,6 +2,13 @@
   "name": "@company/script",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "scripts": {
+    "start": "tsx ./index.ts",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@types/node": "24.13.3",
     "mysql2": "3.23.2",

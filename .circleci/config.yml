@@ -8,7 +8,7 @@ parameters:
 executors:
   core:
     docker:
-      - image: satantime/puppeteer-node:26.5.0
+      - image: satantime/puppeteer-node:24.18.0
     resource_class: medium
 
 jobs:
@@ -34,10 +34,11 @@ jobs:
           paths:
             - ./script/src/node_modules
       - run:
-          name: Build
+          name: Validate
           command: |
             cd ./script/src
-            /usr/local/bin/npx tsx ./index.ts
+            npm run typecheck
+            npm start
             cd ../..
 
 workflows:

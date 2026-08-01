@@ -26,13 +26,6 @@
   "vulnerabilityAlerts": {
     "enabled": false
   },
-  "hostRules": [
-    {
-      "matchHost": "docker.io",
-      "username": "satantime",
-      "password": "dckr_pat_aLRNk3vH9pYc1EtJgrHdOntl4Fs"
-    }
-  ],
   "packageRules": [
     {
       "matchPackageNames": [
@@ -41,13 +34,29 @@
       "enabled": false
     },
     {
-      "matchPackageNames": [
-        "satantime/puppeteer-node",
-        "@types/node",
-        "nodejs/node"
+      "description": "Use published satantime images as the source for Node runtime updates",
+      "matchDatasources": [
+        "node-version"
       ],
-      "allowedVersions": "/^[^0-9]*\\d*[02468]\\./",
-      "branchTopic": "node-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}"
+      "overrideDatasource": "docker",
+      "overridePackageName": "satantime/puppeteer-node"
+    },
+    {
+      "description": "Keep the Node runtime and type declarations in one LTS update",
+      "matchPackageNames": [
+        "node",
+        "satantime/puppeteer-node",
+        "@types/node"
+      ],
+      "versioning": "node",
+      "groupName": "Node.js",
+      "groupSlug": "node",
+      "groupSingleUpdates": true,
+      "separateMajorMinor": false,
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false,
+      "semanticCommitScope": "root",
+      "additionalBranchPrefix": "root/"
     },
     {
       "matchFileNames": [
