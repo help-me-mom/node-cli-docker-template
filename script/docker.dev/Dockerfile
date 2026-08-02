@@ -1,4 +1,4 @@
-FROM satantime/puppeteer-node:24.18.0
+FROM satantime/puppeteer-node:24.18.1
 
 ENV NODE_ENV "development"
 WORKDIR /app
