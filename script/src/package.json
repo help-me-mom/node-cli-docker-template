@@ -3,14 +3,14 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "24.18.0"
+    "node": "26.12.1"
   },
   "scripts": {
     "start": "tsx ./index.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/node": "24.13.3",
+    "@types/node": "26.6.6",
     "mysql2": "3.24.6",
     "nodemon": "3.1.14",
     "tsx": "4.23.15",
